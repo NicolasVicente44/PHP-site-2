@@ -1,0 +1,33 @@
+TEST INSTRUCTIONS
+
+1. Run the provided movies-and-directors.sql in Workbench to create the database and necessary tables
+
+2. Enter your connection details in the index.php
+
+3. Review the routes.php file to understand which MVC parts you'll need
+    3a. Complete the model for the director
+    3b. Complete the model for the movie
+    3c. Review the views for the director - (this is completed for you, but you will use these to determine info you need for your actions)
+    3d. Review the views for the movie - (this is completed for you, but you will use these to determine info you need for your actions)
+    3e. Complete the controller actions for the director
+    3f. Complete the controller actions for the movie
+
+4. Grading for this will work by visual review of each completed action:
+    (10%) - Working CREATE: directors/new -> DirectorsController::create -> DirectorModel::create -> directors/index
+    (10%) - Working CREATE: movies/new -> MoviesController::create -> MovieModel::create -> movies/index
+    (10%) - Working UPDATE: directors/edit -> DirectorsController::update -> DirectorModel::update -> directors/index
+    (10%) - Working UPDATE: movies/edit -> MoviesController::update -> MovieModel::update -> movies/index
+    (10%) - Working INDEX: directors/index -> DirectorsController::index -> DirectorModel::findAll -> directors/index
+    (10%) - Working INDEX: movies/index -> MoviesController::index -> MovieModel::findAll -> movies/index
+    (10%) - Working DELETE: directors/delete -> DirectorsController::delete -> DirectorModel::delete -> directors/index
+    (10%) - Working DELETE: movies/delete -> MoviesController::delete -> MovieModel::delete -> movies/index
+    (5%)  - Submission uploaded to Github and repository link shared
+    (15%) - Zero required effort from the instructor to troubleshoot issues
+
+5. ENSURE YOUR CONTROLLERS HAVE VALIDATION IN THEM (failure to have validation means a create and edit action will lose 50% of the marks)
+    
+IMPORTANT NOTES:
+    - IF a director can't be created, the movie will be considered incomplete and you will lose 50% of marks on all movie actions as a result
+    - IF your final consists of a mess of copy & paste code that is irrelevant to the topic of the final, you will receive a zero
+    - IF your final doesn't abide by the MVC principals learned over the last 5 weeks, you will receive a zero
+    - IF you submit someone else's code or solution as your own, you, and that person, will receive a zero
