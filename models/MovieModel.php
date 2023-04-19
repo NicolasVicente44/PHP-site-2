@@ -45,7 +45,6 @@ class MovieModel {
 
         $conn = null;
 
-        var_dump($movie);
 
         return $movie;
     }
